@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+           Input[Type="Text"] {
+Width: 140px;
+margin: auto;
+Outline: None;
+Min-Height: 50px;
+Border: 2px Solid #1073d0;
+Padding: 12px;
+Background-Color: #F7f7f7;
+Border-Radius: 2px;
+Color: #1073d0;
+Font-Size: 17px;
+text-align: center;
+
+}
+#age {
+Display: Block;
+Margin: 10px;
+Margin-Top: 35px;
+Padding: 10px;
+Padding-Bottom: 20px;
+Overflow: Hidden;
+Font-Family: Verdana;
+Font-Size: 23px;
+Font-Weight: Normal;
+Line-Height: 1.5;
+Word-Spacing: 2.7px;
+Color: Navy;
+text-align: center;
+}
+h4{
+    text-align: center;
+    font-size: 50px;
+}
+body{
+    background-image: url(ink-splash-duotone-stripe-background_1409-1379.jpg);
+    background-color: #cccccc;
+    
+}
+p{
+    Padding: 10px;
+    margin-left: 50px;
+    text-decoration-line: underline;
+    
+    opacity: .9;
+}
+p span
+{
+    background-color: white;
+
+}
+
+    </style>
+    <script>
+       function age() {
+    var d1 = document.getElementById("date").value;
+    var m1 = document.getElementById("month").value;
+    var y1 = document.getElementById("year").value;
+
+    var date = new Date();
+    var d2 = date.getDate();
+    console.log(d2)
+    var m2 = 1 + date.getMonth();
+    var y2 = date.getFullYear();
+    var month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+    if (d1 > d2) {
+        d2 = d2 + month[m2 - 1];
+        m2 = m2 - 1;
+    }
+
+    if (m1 > m2) {
+        m2 = m2 + 12;
+        y2 = y2 - 1;
+    }
+    var d = d2 - d1;
+    var m = m2 - m1;
+    var y = y2 - y1;
+    document.getElementById("age").innerHTML =
+        "Your Age is " + y + " Years " + m + " Months " + d + " Days";
+}
+    </script>
+</head>
+  
+
+<body>
+
+    <div class="container">
+        <form>
+            <div class="base">
+                <div class="enter">
+                    <h4>Age Calculator</h4>
+                </div>
+                <div class="block">
+                    <p class="title"><span>Date</span></p>
+                    <input type="text" name="date" id="date" placeholder="dd" required="required" minlength="1"
+                        maxlength="2" />
+                </div>
+                <div class="block">
+                    <p class="title"> <span>Month</span> </p>
+                    <input type="text" name="month" id="month" placeholder="mm" required="required" minlength="1"
+                        maxlength="2" />
+                </div>
+                <div class="block">
+                    <p class="title"> <span>Year</span> </p>
+                    <input type="text" name="year" id="year" placeholder="yyyy" required="required" minlength="4"
+                        maxlength="4" />
+                </div>
+            </div>
+            <div class="base" >
+                <div class="enter">
+                    <input type="button" name="submit" value="Submit" onclick="age()" />
+                </div>
+            </div>
+            <div id="age"></div>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
