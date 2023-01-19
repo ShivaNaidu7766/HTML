@@ -1,0 +1,35 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif
+}
+
+div{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#2046af, #e2ecff);
+    background-position: center;
+}
+
+p{
+    height: 100px;
+    width: 700px;
+    background-image: linear-gradient(#643a4a, #774f4f);
+    box-shadow: inset 0 0 10px rgb(36, 28, 28);
+    color: rgb(189, 15, 252);
+    text-align: center;
+    
+    font-size: 60px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 0px #000,
+                2px 2px 0px #000,
+                3px 3px 0px #000,
+                4px 4px 0px #000,
+                5px 5px 0px #000,
+                6px 6px 0px #000;
+}
