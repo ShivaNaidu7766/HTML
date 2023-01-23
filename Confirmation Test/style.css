@@ -1,0 +1,53 @@
+        * {
+            font-size: 25;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: normal;
+        }
+
+        .Holder {
+            display: flex;
+            justify-content: center;
+            min-height: 88vh;
+            align-items: center;
+        }
+
+        .Inner {
+            padding: 30px;
+            border-style: dashed;
+            border-radius: 16px;
+        }
+
+        .game {
+            display: inline-block;
+        }
+
+        #one {
+            color: #000000;
+        }
+
+        #two {
+            color: #000000;
+        }
+
+        #op {
+            color: #000000;
+        }
+
+        input {
+            font-size: 25px;
+            border: none;
+            border-radius: 10px;
+            padding: 10;
+            background-color: #5162fa;
+            color: white;
+        }
+
+        input::placeholder {
+            color: white;
+            padding: 10;
+        }
+
+        body {
+            background-image: linear-gradient(#c96e6e,#ad94e4 );
+        }
+
