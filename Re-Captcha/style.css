@@ -1,0 +1,86 @@
+body {
+  background: linear-gradient(to bottom, #ac8dfa, #d55b5b);
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  height: 87vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  background-color: rgba(61, 37, 106, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 5px;
+  padding: 25px;
+  box-shadow: 0px 0px 10px 2px rgb(0, 0, 0);
+}
+
+.captcha {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-style: italic;
+  font-size: 2em;
+  padding: 3px;
+  border-radius: 5px;
+  text-decoration: line-through;
+  color: #000000;
+  background: linear-gradient(to bottom, #ffffff, #ffffff);
+  background-blend-mode: overlay;
+  width: 90%;
+}
+
+.restart {
+  font-size: 1.2em;
+  margin-top: 15px;
+}
+
+.restart a {
+  text-decoration: none;
+  color: rgb(36, 11, 11);
+  transition: 0.5s ease;
+}
+
+.restart a:hover {
+  color: #FF8B13;
+}
+
+.input input {
+  width: 90%;
+  margin-bottom: 3px;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2em;
+}
+
+.input input:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px 1px rgb(0, 0, 0);
+}
+
+input[type="button"] {
+  background-color: #FF8B13;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2em;
+  transition: 0.5s ease;
+}
+
+input[type="button"]:hover {
+  background-color: #ff5e1a;
+  cursor: pointer;
+}
+
+.errmsg {
+  color: black;
+  padding: 5px;
+  transition: 0.5s ease;
+}
